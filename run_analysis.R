@@ -30,7 +30,7 @@ Table_Y[,1]<-Table_AL[Table_Y[,1],2]
 names(Table_Y)<-"activity"
     
 ##Appropriately labels the data set with descriptive variable names.
-Table_Subject<-subject"
+Table_Subject<-"subject"
 ReadyData<-cbind(Table_Subject,Table_Y,Table_X) 
 
 ##From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
