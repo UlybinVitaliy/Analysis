@@ -38,4 +38,4 @@ ReadyData$subject<-as.factor(ReadyData$subject)
 ReadyData<-data.table(ReadyData)
 tidy<-aggregate(. ~Subject + Activity,ReadyData,mean)
 tidy<-tidy[order(tidy$subject,tidy$activity),]
-tidy
+write.table(tidy,file ="tidy.txt",row.names = FALSE)
